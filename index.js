@@ -30,3 +30,43 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+function validate(email) {
+  // let newEmail = email.trim();
+
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+}
+// console.log(validate());
+let loginForm = document.getElementById("form");
+let showInfor = document.querySelectorAll(".show-infor");
+showInfor.forEach((infor) => {
+  infor.classList.add("hide");
+});
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let email = document.getElementById("email").value;
+  console.log(email);
+  if (validate(email)) {
+    // let a = document.getElementById("form");
+    loginForm.classList.add("hide");
+    showInfor.forEach((infor) => {
+      infor.classList.remove("hide");
+    });
+  }
+});
+// function validateEmail() {
+//   let email = document.getElementById("email");
+//   console.log(email);
+//   // let email = form.elements["email"];
+//   // let emailAddress = email.value;
+//   // let email = document.formValidateUser.email.value;
+//   if (validate(email)) {
+//     document.getElementsByClassName("form-check-user").classList.add("hide");
+//     document.getElementsByClassName("show-infor").classList.remove("hide");
+//     document.getElementsByClassName("show-infor").classList.remove("hide");
+//   } else {
+//   }
+// }

@@ -1,0 +1,78 @@
+@media screen and (max-width: 1024px) {
+  .name-title {
+    top: 16%;
+    left: 27%;
+    font-size: 37px;
+    color: #199cdb;
+  }
+  /* .height-tablet {
+    height: 325px !important;
+    height: 30% !important;
+    background-color: #199cdb;
+  } */
+  .lines-achivement {
+    top: 51%;
+  }
+  .achivement-web p {
+    padding-left: 4px;
+    margin-bottom: 0;
+  }
+  .achivement-web li::before {
+    margin-left: -3em;
+  }
+  .heigh-tablet {
+    margin-left: -20px !important;
+  }
+  .position-relative-md {
+    position: relative;
+  }
+  .postion-md-hoc-van {
+    position: absolute;
+    top: 33%;
+    right: -88px;
+    order: 4;
+  }
+  .postion-md-ky-nang {
+    position: absolute;
+    order: 3;
+    top: 56%;
+    right: 208px;
+  }
+  .postion-md-ngon-ngu {
+    position: absolute;
+    order: 6;
+    top: 83%;
+    right: 208px;
+  }
+  .postion-md-so-thich {
+    position: absolute;
+    order: 5;
+    right: -88px;
+    top: 64%;
+  }
+  .postion-md-hoat-dong {
+    position: absolute;
+    height: 31%;
+    order: 2;
+    right: -88px;
+  }
+  .postion-md-kinh-nghiem {
+    position: absolute;
+    order: 1;
+    height: 53%;
+    right: 208px;
+  }
+  .abc {
+    height: 1135px;
+    width: 500px;
+  }
+  .list-icon-info {
+    flex-wrap: wrap;
+  }
+  .display-mobile {
+    display: none;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
