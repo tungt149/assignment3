@@ -20,6 +20,9 @@
   --main-line-nav-height: 100px;
   --main-line-nav-top: 0px;
 }
+.margin-left-icon {
+  padding-left: 10px;
+}
 .name-title {
   top: 16%;
   left: 27%;
@@ -374,4 +377,15 @@ footer i {
 .out {
   animation-name: zoom-out;
   animation-duration: 0.6s;
+}
+.button-show-more-exp {
+  background-color: rgb(245, 238, 141);
+  border-radius: 11px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.exp-height {
+  height: 120px;
 }

@@ -19,9 +19,34 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Tung ne</title>
   </head>
   <body>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
     <div class="container">
       <!-- begin header of page -->
       <div class="container">
@@ -80,7 +105,7 @@
       <main>
         <div class="container">
           <div
-            class="row height-session-1 justify-content-center align-items-center"
+            class="row height-session-1 justify-content-center align-items-center mb-3"
           >
             <div class="col-md-6 background-grey h-100 h-100 pt-3">
               <p class="fs-2 fw-bold">Mục tiêu nghề nghiệp</p>
@@ -95,7 +120,7 @@
             <div class="col-md-6 background-light-grey h-100 h-100 pt-3">
               <p class="fs-2 fw-bold">Thông tin cá nhân</p>
               <div class="d-flex">
-                <div class="me-3 fw-bold hide show-infor">
+                <div class="me-3 fw-bold show-infor">
                   <p>Ngày Sinh:</p>
                   <p>Điện Thoại:</p>
                   <p>Email:</p>
@@ -109,7 +134,7 @@
                   <p>Thành Phố Thủ Đức</p>
                 </div>
               </div>
-              <div class="icon-infor icon">
+              <div class="icon-infor icon show-infor">
                 <a><i class="icon-twitter icon"></i></a>
                 <a> <i class="icon-facebook icon"></i></a>
                 <i class="icon-gplus icon"></i>
@@ -142,17 +167,17 @@
         <!-- begin about experion  -->
         <div class="container" id="experience">
           <div
-            class="row m-lg-4 m-md-4 gap-2 justify-content-between d-lg-flex position-relative-md abc"
+            class="row m-lg-4 m-md-4 gap-4 justify-content-between d-lg-flex"
           >
             <!-- <div class="experience-information" id="experience"> -->
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 gap-3 postion-md-kinh-nghiem"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 gap-3 exp-show-more"
             >
-              <div class="d-flex h2 ps-4 pt-3">
+              <div class="d-flex h2 pt-3">
                 <p>Kinh Nghiệm</p>
-                <i class="ic-toolbox"></i>
+                <i class="ic-toolbox margin-left-icon"></i>
               </div>
-              <ul>
+              <ul class="show-exp" id="kinh">
                 <li class="title-list-exp-info boder-still-now">
                   <p>Fullstack Developer</p>
                   <br />
@@ -184,16 +209,20 @@
                   </ul>
                 </li>
               </ul>
+
+              <button class="button-show-more-exp hide" id="button-Hoc-Van">
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
             <!-- kinh nghiem -->
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 position-md-absolute postion-md-hoc-van"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 exp-show-more"
             >
               <div class="d-flex h2 ps-4 pt-3">
                 <p>Học Vấn</p>
-                <i class="ic-pencil"></i>
+                <i class="ic-pencil margin-left-icon"></i>
               </div>
-              <ul>
+              <ul class="show-exp">
                 <li class="title-list-exp-info boder-still-now">
                   <p>FUNIX</p>
                   <br />
@@ -215,16 +244,19 @@
                   </ul>
                 </li>
               </ul>
+              <button class="button-show-more-exp hide">
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
             <!-- end hoc van -->
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 postion-md-hoat-dong"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 exp-show-more"
             >
               <div class="d-flex h2 ps-4 pt-3">
                 <p>Hoạt Động</p>
-                <i class="ic-toolbox"></i>
+                <i class="ic-toolbox margin-left-icon"></i>
               </div>
-              <ul>
+              <ul class="show-exp">
                 <li class="title-list-exp-info">
                   <p>FPT Edu Hackathon 2023</p>
                   <br />
@@ -243,19 +275,26 @@
                   </ul>
                 </li>
               </ul>
+              <button
+                class="button-show-more-exp hide"
+                id="button"
+                type="submit"
+              >
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
             <!-- end hoat dong -->
             <!-- end about experion  -->
             <!-- begin html about hobbies, skill, language -->
             <!-- <div class="justify-content-evenly m-4"> -->
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 postion-md-so-thich"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 exp-show-more"
             >
               <div class="d-flex h2 ps-4 pt-3">
                 <p>Sở Thích</p>
-                <i class="ic-telescope"></i>
+                <i class="ic-telescope margin-left-icon"></i>
               </div>
-              <div class="list-icon-info">
+              <div class="list-icon-info show-exp">
                 <div>
                   <i class="ic-megaphone boder-icon"></i>
                   <p>Âm nhạc</p>
@@ -273,15 +312,18 @@
                   <p>Nấu ăn</p>
                 </div>
               </div>
+              <button class="button-show-more-exp hide" type="submit">
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 postion-md-ngon-ngu"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 exp-show-more"
             >
               <div class="d-flex h2 ps-4 pt-3">
                 <p>Ngôn ngữ</p>
-                <i class="ic-mic"></i>
+                <i class="ic-mic margin-left-icon"></i>
               </div>
-              <div class="ps-4">
+              <div class="ps-4 show-exp">
                 <p>Tiếng Anh - IELTS 7.0</p>
                 <!-- design underline under language english -->
                 <div class="d-flex gap-1 mb-2">
@@ -297,15 +339,18 @@
                   <div class="underline line-blue"></div>
                 </div>
               </div>
+              <button class="button-show-more-exp hide" type="submit">
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
             <div
-              class="border border-dark col-lg-3 col-md-6 col-sm-12 postion-md-ky-nang"
+              class="border border-dark col-lg-3 col-md-5 col-sm-12 exp-show-more exp-show-more"
             >
               <div class="d-flex h2 ps-4 pt-3">
                 <p>Kỹ năng</p>
-                <i class="ic-tools-2"></i>
+                <i class="ic-tools-2 margin-left-icon"></i>
               </div>
-              <div class="ps-4">
+              <div class="ps-4 show-exp">
                 <div>
                   <p>HTML/CSS: Fundanmetial</p>
                   <div class="d-flex gap-1 mb-2">
@@ -333,8 +378,13 @@
                   </div>
                 </div>
               </div>
+
+              <button class="button-show-more-exp hide" type="submit">
+                <i class="fa fa-caret-down me-2"></i>View more
+              </button>
             </div>
           </div>
+          <d
         </div>
 
         <!-- end html about hobbies, skill, language -->

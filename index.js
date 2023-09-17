@@ -1,3 +1,4 @@
+//function zoom image
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
@@ -11,6 +12,7 @@ for (var i = 0; i < img.length; i++) {
   };
 }
 
+//function validate email
 // When the user clicks on <span> (x), close the
 
 function closeModal() {
@@ -31,42 +33,78 @@ document.addEventListener("keydown", function (e) {
   }
 });
 function validate(email) {
-  // let newEmail = email.trim();
-
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
+  let emailRegex =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (emailRegex.test(email)) {
+    return true;
+  }
+  return false;
 }
-// console.log(validate());
 let loginForm = document.getElementById("form");
 let showInfor = document.querySelectorAll(".show-infor");
+let smallHelp = document.getElementById("emailHelp");
+//hide infor by for each
 showInfor.forEach((infor) => {
   infor.classList.add("hide");
 });
+//click submit email
 loginForm.addEventListener("submit", function (e) {
   e.preventDefault();
   let email = document.getElementById("email").value;
   console.log(email);
-  if (validate(email)) {
+
+  if (validate(email) == true) {
     // let a = document.getElementById("form");
+    console.log(validate());
     loginForm.classList.add("hide");
     showInfor.forEach((infor) => {
       infor.classList.remove("hide");
     });
+  } else {
+    console.log(smallHelp);
+    smallHelp.innerText = "Email không hợp lệ";
   }
 });
-// function validateEmail() {
-//   let email = document.getElementById("email");
-//   console.log(email);
-//   // let email = form.elements["email"];
-//   // let emailAddress = email.value;
-//   // let email = document.formValidateUser.email.value;
-//   if (validate(email)) {
-//     document.getElementsByClassName("form-check-user").classList.add("hide");
-//     document.getElementsByClassName("show-infor").classList.remove("hide");
-//     document.getElementsByClassName("show-infor").classList.remove("hide");
-//   } else {
-//   }
+//function show more, show less     padding-left: 25px;
+let expInfor = document.querySelectorAll(".show-exp");
+// expInfor.forEach((expInfor) => {
+//   expInfor.classList.add("hide");
+// });
+//hover exp
+let listDataExpShowMore = document.querySelectorAll(".exp-show-more");
+let listButtonShowMore = document.querySelectorAll(".button-show-more-exp");
+
+for (let i = 0; i < listDataExpShowMore.length; i++) {
+  listDataExpShowMore[i].addEventListener("mouseover", mouseOver);
+  function mouseOver() {
+    for (let j = 0; j < listButtonShowMore.length; j++) {
+      listButtonShowMore[i].classList.remove("hide");
+    }
+  }
+  listDataExpShowMore[i].addEventListener("mouseout", mouseOut);
+  function mouseOut() {
+    for (let j = 0; j < listButtonShowMore.length; j++) {
+      listButtonShowMore[i].classList.add("hide");
+    }
+  }
+}
+
+// abc.addEventListener("mouseover", mouseOver);
+for (let i = 0; i < expInfor.length; i++) {
+  expInfor[i].classList.add("hide");
+
+  for (let j = 0; j < listButtonShowMore.length; j++) {
+    listButtonShowMore[i].addEventListener("click", () => {
+      expInfor[i].classList.remove("hide");
+      expInfor.splice(i, expInfor.length);
+      for (let k = 0; k < expInfor.length; k++) {
+        expInfor[k].classList.add("exp-height");
+      }
+    });
+  }
+}
+let hocVan = document.getElementById("button-Hoc-Van");
+let kinh = document.getElementById("kinh");
+// function toggleText() {
+//   kinh.classList.remove("hide");
 // }
