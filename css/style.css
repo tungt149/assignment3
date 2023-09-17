@@ -386,6 +386,18 @@ footer i {
   text-align: center;
   margin-bottom: 10px;
 }
-.exp-height {
-  height: 120px;
+
+.button-show-less-exp {
+  background-color: rgb(245, 238, 141);
+  border-radius: 11px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 10px;
 }
+/* .experience-height {
+  height: 571px;
+}
+.learning {
+  height: 315px;
+} */

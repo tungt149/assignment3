@@ -67,44 +67,40 @@ loginForm.addEventListener("submit", function (e) {
 });
 //function show more, show less     padding-left: 25px;
 let expInfor = document.querySelectorAll(".show-exp");
-// expInfor.forEach((expInfor) => {
-//   expInfor.classList.add("hide");
-// });
+expInfor.forEach((expInfor) => {
+  expInfor.classList.add("hide");
+});
 //hover exp
 let listDataExpShowMore = document.querySelectorAll(".exp-show-more");
 let listButtonShowMore = document.querySelectorAll(".button-show-more-exp");
-
+let listButtonShowLess = document.querySelectorAll(".button-show-less-exp");
 for (let i = 0; i < listDataExpShowMore.length; i++) {
   listDataExpShowMore[i].addEventListener("mouseover", mouseOver);
   function mouseOver() {
-    for (let j = 0; j < listButtonShowMore.length; j++) {
+    if (expInfor[i].classList.contains("hide")) {
       listButtonShowMore[i].classList.remove("hide");
+      listButtonShowLess[i].classList.add("hide");
+    } else {
+      listButtonShowMore[i].classList.add("hide");
+      listButtonShowLess[i].classList.remove("hide");
     }
   }
   listDataExpShowMore[i].addEventListener("mouseout", mouseOut);
   function mouseOut() {
-    for (let j = 0; j < listButtonShowMore.length; j++) {
-      listButtonShowMore[i].classList.add("hide");
-    }
+    listButtonShowMore[i].classList.add("hide");
   }
 }
 
 // abc.addEventListener("mouseover", mouseOver);
 for (let i = 0; i < expInfor.length; i++) {
-  expInfor[i].classList.add("hide");
+  expInfor[i].classList.add("exp-height");
 
-  for (let j = 0; j < listButtonShowMore.length; j++) {
-    listButtonShowMore[i].addEventListener("click", () => {
-      expInfor[i].classList.remove("hide");
-      expInfor.splice(i, expInfor.length);
-      for (let k = 0; k < expInfor.length; k++) {
-        expInfor[k].classList.add("exp-height");
-      }
-    });
-  }
+  listButtonShowMore[i].addEventListener("click", () => {
+    expInfor[i].classList.remove("hide");
+  });
+  listButtonShowLess[i].addEventListener("click", () => {
+    expInfor[i].classList.add("hide");
+  });
 }
 let hocVan = document.getElementById("button-Hoc-Van");
 let kinh = document.getElementById("kinh");
-// function toggleText() {
-//   kinh.classList.remove("hide");
-// }
