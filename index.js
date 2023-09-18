@@ -93,8 +93,6 @@ for (let i = 0; i < listDataExpShowMore.length; i++) {
 
 // abc.addEventListener("mouseover", mouseOver);
 for (let i = 0; i < expInfor.length; i++) {
-  expInfor[i].classList.add("exp-height");
-
   listButtonShowMore[i].addEventListener("click", () => {
     expInfor[i].classList.remove("hide");
   });
@@ -104,3 +102,21 @@ for (let i = 0; i < expInfor.length; i++) {
 }
 let hocVan = document.getElementById("button-Hoc-Van");
 let kinh = document.getElementById("kinh");
+//check tablet
+let sessionExp = document.getElementById("session-exp");
+let x = window.matchMedia("screen and (max-width: 768px)");
+let postionHocVan = document.getElementById("learning");
+// .classList.add("postion-md-hoc-van");
+let postionSoThich = document.getElementById("hobbies");
+// .classList.add("postion-md-so-thich");
+let postionHoatDong = document.getElementById("activities");
+// .classList.add("postion-md-hoat-dong");
+let postionKinhNghiem = document.getElementById("experience");
+// .classList.add("postion-md-kinh-nghiem");
+let postionNgonNgu = document.getElementById("language");
+// .classList.add("postion-md-ngon-ngu");
+let postionKyNang = document.getElementById("skill");
+// .classList.add("postion-md-ky-nang");
+if (x.matches) {
+  console.log(window.innerWidth);
+}

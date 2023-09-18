@@ -26,7 +26,7 @@
 
   .postion-md-hoc-van {
     position: absolute;
-    top: 33%;
+    top: 37%;
     right: -88px;
     order: 4;
   }
@@ -46,7 +46,7 @@
     position: absolute;
     order: 5;
     right: -88px;
-    top: 64%;
+    top: 71%;
   }
   .postion-md-hoat-dong {
     position: absolute;
@@ -70,4 +70,13 @@
   .modal-content {
     width: 100%;
   }
+  .positiontablet {
+    position: relative;
+    height: 1135px;
+    width: 480px;
+  }
+  /* .abc {
+    height: 1135px;
+    width: 500px;
+  } */
 }
