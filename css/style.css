@@ -401,3 +401,79 @@ footer i {
 .learning {
   height: 315px;
 } */
+.margin-p {
+  margin: 0;
+}
+.background-light {
+  background-color: #f7f8fa;
+}
+.boder-container {
+  border: 10px solid blue;
+}
+.background-blue {
+  background-color: blue;
+}
+.fa-user-circle {
+  background-color: #ffffff;
+}
+.fa-flag-checkered {
+  padding-left: 3%;
+}
+.timeline {
+  position: relative;
+}
+
+/*Line*/
+.timeline > li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: -19px;
+}
+
+/*Circle*/
+.timeline > li::after {
+  text-align: center;
+  padding-top: 6px;
+  z-index: 10;
+  content: "0" counter(item);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  background-color: rgb(183, 163, 255);
+  border-radius: 50%;
+  top: 8px;
+  left: -23px;
+  color: #f7f8fa;
+}
+
+/*Content*/
+.timeline > li {
+  counter-increment: item;
+  padding: 10px 10px;
+  margin-left: 0px;
+  min-height: 70px;
+  position: relative;
+  list-style: none;
+}
+.timeline > li:nth-last-child(1)::before {
+  width: 0px;
+}
+.padding-text-timeline {
+  font-size: 14px;
+  /* text-align: center; */
+  padding-left: 8%;
+}
+.border-dotted {
+  border-bottom: 0.52px dotted #199cdb;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.height-grid-1,
+.height-grid-2 {
+  height: 50%;
+}
