@@ -1,95 +1,26 @@
 @media screen and (max-width: 480px) {
-  .center-mobile {
-    display: flex !important;
-    justify-content: center !important;
-  }
-  .height-session-1 {
-    height: 100% !important;
-  }
-  .display-nav-sm {
-    display: grid;
-    justify-content: start;
-  }
-  .name-title {
-    top: 5% !important;
-    left: 19% !important;
-    font-size: 25px !important;
-    color: #199cdb;
-  }
-  .line-nav-1,
-  .line-nav-2,
-  .line-nav-3,
-  .line-nav-4,
-  .line-nav-5,
-  .line-nav-6,
-  .line-nav-7 {
+  .display-tablet {
     display: none;
   }
-  .margin-nav-top {
-    margin-top: 0 !important;
-    padding-top: 10px;
+  .display-mobile {
+    display: unset !important;
   }
-  nav div div {
-    height: 100%;
+  .d-sm-grid {
+    display: grid !important;
   }
-  .padding-text {
-    padding-left: 12px !important;
+  .justify-content-sm-center {
+    justify-content: center;
   }
-  .postion-md-kinh-nghiem,
-  .postion-md-hoat-dong,
-  .postion-md-so-thich,
-  .postion-md-ngon-ngu,
-  .postion-md-ky-nang,
-  .postion-md-hoc-van {
-    position: static !important;
-    justify-content: center !important;
-  }
-  .abc {
-    width: auto !important;
-    height: auto !important;
-  }
-  .boder-js-cer {
-    border-left: none !important;
-    padding-left: 0;
-  }
-  .lines-achivement-mobile {
-    border: 0.25px solid rgb(224, 125, 79);
-    width: 100%;
-    top: 34% !important;
-  }
-  .lines-achivement {
-    border: 0.25px solid rgb(224, 125, 79);
-    width: 100%;
-    top: 69% !important;
-  }
-  .width-mobile {
-    width: auto;
-  }
-  .achivement-web-mobile {
-    margin-top: 3rem !important;
-  }
-  .project-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 20px;
-    gap: 20px;
-  }
-
-  .img-certificate {
-    width: 92%;
-    height: auto;
-  }
-  .mt-mobile {
-    margin-top: 10px !important;
-  }
-  .display-not-mobile {
-    display: none !important;
+  .margin-left-2 {
+    margin-left: 0px !important;
   }
   .display-mobile {
-    display: flex;
-    justify-content: space-between;
+    display: unset;
   }
-  .modal-content {
-    width: 100%;
+  .display-tablet {
+    display: none;
+  }
+  .timeline > li {
+    padding-top: 17%;
   }
 }

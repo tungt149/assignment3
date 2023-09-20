@@ -120,3 +120,9 @@ let postionKyNang = document.getElementById("skill");
 if (x.matches) {
   console.log(window.innerWidth);
 }
+let projects = document.querySelectorAll(".project");
+projects.forEach((project) => {
+  project.addEventListener("click", function () {
+    location.href = "digital-cv.html";
+  });
+});

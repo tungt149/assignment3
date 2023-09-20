@@ -416,9 +416,7 @@ footer i {
 .fa-user-circle {
   background-color: #ffffff;
 }
-.fa-flag-checkered {
-  padding-left: 3%;
-}
+
 .timeline {
   position: relative;
 }
@@ -476,4 +474,25 @@ footer i {
 .height-grid-1,
 .height-grid-2 {
   height: 50%;
+}
+.show-pc-tablet {
+  display: none !important;
+}
+.margin-left-2 {
+  margin-left: 0px !important;
+}
+
+.marign-left-1 {
+  margin-left: 5px !important;
+}
+.margin-right-1,
+.margin-right-2 {
+  margin-right: -5px !important;
+}
+a:link {
+  text-decoration: none !important;
+  color: none !important;
+}
+a:active {
+  color: black !important;
 }

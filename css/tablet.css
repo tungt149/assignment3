@@ -79,4 +79,23 @@
     height: 1135px;
     width: 500px;
   } */
+  .height-grid-1,
+  .height-grid-2 {
+    height: unset;
+  }
+
+  .show-large {
+    display: none !important;
+  }
+
+  .fa-flag-checkered {
+    text-align: center;
+  }
+
+  .show-pc-tablet {
+    display: unset !important;
+  }
+  .display-mobile {
+    display: none;
+  }
 }

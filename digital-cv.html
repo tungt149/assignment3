@@ -28,22 +28,22 @@
   </head>
   <body>
     <div class="container text-dark">
-      <div class="container row background-blue">
+      <div class="container-lg row background-blue">
         <!-- 2 grid large -->
-        <div class="col-9">
+        <div class="col-lg-9 col-md-12">
           <div
-            class="row boder-container height-grid-1 justify-content-between"
+            class="row boder-container height-grid-1 justify-content-lg-between justify-content-md-center justify-content-sm-center"
           >
             <!-- grid 1 -->
-            <div class="row background-light col-8">
-              <div class="row d-grid">
+            <div class="row background-light col-lg-8 col-md-12">
+              <div class="row d-lg-grid d-md-flex">
                 <h5
                   class="fw-bold text-primary border-bottom border-dark pb-2 pt-2"
                 >
                   Goal
                 </h5>
-                <div class="d-flex border-bottom pb-2 pt-2">
-                  <i class="fa fa-flag-checkered col-2 mt-2"></i>
+                <div class="d-lg-flex border-bottom pb-2 pt-2">
+                  <i class="fa fa-flag-checkered col-lg-2 col-12 mt-2"></i>
                   <div class="col-10">
                     <p class="fw-bold margin-p">Goal 1</p>
                     <p class="margin-p">
@@ -52,9 +52,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="d-flex border-bottom pb-2 pt-2">
-                  <i class="fa fa-flag-checkered col-2 mt-2"></i>
-                  <div class="col-10">
+                <div class="d-lg-flex border-bottom pb-2 pt-2">
+                  <i class="fa fa-flag-checkered col-lg-2 col-12 mt-2"></i>
+                  <div class="col-lg-10">
                     <p class="fw-bold margin-p">Goal 2</p>
                     <p class="margin-p">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -62,9 +62,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="d-flex border-bottom mb-2 pt-2">
-                  <i class="fa fa-flag-checkered col-2"></i>
-                  <div class="col-10">
+                <div class="d-lg-flex border-bottom mb-2 pt-2">
+                  <i class="fa fa-flag-checkered col-lg-2 col-12 col-md-12"></i>
+                  <div class="col-lg-10">
                     <p class="fw-bold margin-p">Goal 3</p>
                     <p>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -75,8 +75,10 @@
               </div>
             </div>
             <!-- grid 2 -->
-            <div class="background-light text-dark col-4">
-              <div class="col-12 d-grid">
+            <div
+              class="background-light text-dark col-lg-4 col-md-12 show-large"
+            >
+              <div class="col-md-12 col-lg-12 d-grid">
                 <h5
                   class="fw-bold text-primary border-bottom border-dark pb-2 pt-2"
                 >
@@ -114,62 +116,108 @@
             </div>
           </div>
           <div
-            class="row boder-container justify-content-between height-grid-2"
+            class="row boder-container justify-content-lg-between justify-content-md-center justify-content-sm-center height-grid-2"
           >
             <!-- grid 2 -->
-            <div class="row background-light col-8">
+            <div class="row background-light col-lg-8 col-md-12">
               <!-- <h2>Goals</h2> -->
-              <div>
-                <h5
-                  class="fw-bold text-primary border-bottom pb-2 pt-2 border-dark"
-                >
-                  Scopes
-                </h5>
-                <div class="row d-flex">
-                  <div class="col-6">
-                    <p class="fw-bold margin-p pb-3">IN</p>
-                    <p class="font-size-14">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo, itaque.
-                    </p>
-                    <p class="font-size-14">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo, itaque.
-                    </p>
-                  </div>
 
+              <h5
+                class="fw-bold text-primary border-bottom pb-2 pt-2 border-dark"
+              >
+                Scopes
+              </h5>
+              <div class="row d-md-flex">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <p class="fw-bold margin-p pb-3">IN</p>
+                  <p class="font-size-14">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo, itaque.
+                  </p>
+                  <p class="font-size-14">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo, itaque.
+                  </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <p class="fw-bold margin-p pb-3">OUT</p>
+                  <p class="font-size-14">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo, itaque.
+                  </p>
+                  <p class="font-size-14">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo, itaque.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- for tablet pc -->
+            <div
+              class="row background-light text-dark col-lg-4 col-md-12 show-pc-tablet mt-md-3"
+            >
+              <div class="col-md-12 col-lg-12 d-grid">
+                <h5
+                  class="fw-bold text-primary border-bottom border-dark pb-2 pt-2"
+                >
+                  Team
+                </h5>
+
+                <div class="d-lg-flex d-sm-grid d-md-grid">
+                  <i class="fas fa-user mt-2 col-12 text-center"></i>
+                  <div class="col-6 d-sm-grid">
+                    <p class="fw-bold margin-p">Member 01</p>
+                    <p class="margin-p">Name: ...</p>
+                  </div>
+                </div>
+                <div class="d-lg-flex d-sm-grid d-md-grid">
+                  <i class="fas fa-user col-12 text-center mt-2"></i>
                   <div class="col-6">
-                    <p class="fw-bold margin-p pb-3">OUT</p>
-                    <p class="font-size-14">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo, itaque.
-                    </p>
-                    <p class="font-size-14">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo, itaque.
-                    </p>
+                    <p class="fw-bold margin-p">Member 02</p>
+                    <p class="margin-p">Name: ...</p>
+                  </div>
+                </div>
+                <div class="d-lg-flex d-sm-grid d-md-grid">
+                  <i class="fas fa-user col-12 text-center mt-2"></i>
+                  <div class="col-md-6 col-sm-12">
+                    <p class="fw-bold margin-p">Member 03</p>
+                    <p class="margin-p">Name: ...</p>
+                  </div>
+                </div>
+                <div class="d-lg-flex d-sm-grid d-md-grid">
+                  <i
+                    class="fas fa-user col-12 text-center mt-2 order-mobile-1"
+                  ></i>
+                  <div class="col-6 order-mobile-2">
+                    <p class="fw-bold margin-p">Member 04</p>
+                    <p class="margin-p">Name: ...</p>
                   </div>
                 </div>
               </div>
             </div>
             <!-- grid 2 -->
-            <div class="background-light text-dark col-4">
-              <div class="col-12 d-grid">
+            <div
+              class="row background-light text-dark col-lg-4 col-md-12 me-lg-0 mt-md-3 mt-lg-0 justify-content-md-center justify-content-sm-center"
+            >
+              <div class="col-12">
                 <h5
                   class="fw-bold text-primary border-bottom pb-2 pt-2 border-dark"
                 >
                   Primary
                 </h5>
-                <div class="d-flex">
-                  <i class="fas fa-question-circle mt-2 col-2"></i>
+                <div class="d-lg-flex d-sm-grid d-md-grid">
+                  <i
+                    class="fas fa-question-circle mt-2 col-lg-2 col-md-12 col-12"
+                  ></i>
                   <div class="col-9">
                     <p class="margin-p">
                       Lorem ipsum dolor sit, amet consectetur
                     </p>
                   </div>
                 </div>
-                <div class="d-flex">
-                  <i class="fas fa-question-circle mt-2 col-2"></i>
+                <div class="d-lg-flex d-sm-grid">
+                  <i class="fas fa-question-circle mt-2 col-lg-2 col-md-12"></i>
                   <div class="col-9">
                     <p class="margin-p">
                       Lorem ipsum dolor sit, amet consectetur
@@ -180,7 +228,9 @@
             </div>
           </div>
         </div>
-        <div class="background-light col-3 boder-container">
+        <div
+          class="background-light col-lg-3 col-md-12 boder-container margin-left-2 justify-content-md-center justify-content-sm-center"
+        >
           <div class="">
             <div class="d-grid">
               <h5
@@ -191,44 +241,58 @@
               <div>
                 <ol class="timeline">
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
 
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>
                   </li>
                   <li class="border-dotted">
-                    <p class="margin-p padding-text-timeline">Project Start</p>
+                    <p class="margin-p padding-text-timeline fw-bold">
+                      Project Start
+                    </p>
                     <p class="margin-p padding-text-timeline">
                       Lorem ipsum dolor sit amet
                     </p>

@@ -75,4 +75,40 @@
   .modal-content {
     width: 100%;
   }
+  .height-grid-1,
+  .height-grid-2 {
+    height: unset;
+  }
+
+  .margin-left-2 {
+    margin-left: unset;
+  }
+
+  .show-large {
+    display: none !important;
+  }
+
+  .fa-flag-checkered,
+  .fa-question-circle {
+    text-align: center;
+  }
+
+  .show-pc-tablet {
+    display: unset !important;
+  }
+  .padding-text-timeline {
+    font-size: 16px;
+    /* text-align: center; */
+    padding-left: unset;
+  }
+
+  .timeline > li {
+    padding-top: 10%;
+  }
+  .timeline > li::after {
+    left: 0;
+  }
+  .display-mobile {
+    display: none;
+  }
 }
