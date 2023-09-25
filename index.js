@@ -100,16 +100,7 @@ for (let i = 0; i < expInfor.length; i++) {
     expInfor[i].classList.add("hide");
   });
 }
-let kinh = document.querySelectorAll(".tablet");
-//check tablet
-let sessionExp = document.getElementById("session-exp");
-let x = window.matchMedia("screen and (max-width: 768px)");
 
-if (!x.matches) {
-  sessionExp.forEach((s) => {
-    s.classList.remove(tablet);
-  });
-}
 let projects = document.querySelectorAll(".project");
 projects.forEach((project) => {
   project.addEventListener("click", function () {
