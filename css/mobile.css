@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .center-mobile {
     display: flex !important;
     justify-content: center !important;
