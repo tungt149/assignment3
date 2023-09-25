@@ -469,7 +469,7 @@ footer i {
   border-bottom: 0.52px dotted #199cdb;
 }
 .font-size-14 {
-  font-size: 14px;
+  font-size: 16px;
 }
 .height-grid-1,
 .height-grid-2 {
@@ -495,4 +495,7 @@ a:link {
 }
 a:active {
   color: black !important;
+}
+.display-tablet {
+  display: none;
 }

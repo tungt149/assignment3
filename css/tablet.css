@@ -98,4 +98,10 @@
   .display-mobile {
     display: none;
   }
+  .display-tablet {
+    display: unset !important;
+  }
+  .display-pc-mobile {
+    display: none;
+  }
 }
